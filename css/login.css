@@ -1,0 +1,98 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Fullscreen coverage */
+  background: url('../assets/Evm.jpeg') no-repeat center center fixed; /* Background image path */
+  background-size: cover;
+}
+
+h1 {
+  font-size: 32px; /* Larger title for emphasis */
+  color: #52a9b8; /* Teal color from palette */
+  margin-bottom: 20px; /* Space between title and container */
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px; /* Container width */
+  background-color: rgba(13, 19, 19, 0.85); /* Darker semi-transparent background */
+  padding: 30px 40px; /* Adjust padding */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+  text-align: center; /* Center content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px; /* Label font size */
+  color: #ffffff; /* White for contrast */
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%; /* Full width */
+  padding: 15px; /* Larger padding for better touch target */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9; /* Light background for inputs */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  margin-bottom: 15px; /* More spacing between inputs */
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Focus glow */
+}
+
+button {
+  width: 40%; /* Smaller width for login button */
+  padding: 10px; /* Reduced padding */
+  background-color: #1c8190; /* Teal color from palette */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px; /* Slightly smaller font */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px; /* Space above the button */
+}
+
+button:hover {
+  background-color: #558e99; /* Darker shade for hover */
+}
+
+button:active {
+  transform: translateY(2px); /* Simulate press effect */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust container width on mobile */
+    padding: 20px; /* Adjust padding for mobile */
+  }
+
+  h1 {
+    font-size: 28px; /* Adjust title size for mobile */
+  }
+
+  button {
+    width: 50%; /* Adjust button width on mobile */
+  }
+}
